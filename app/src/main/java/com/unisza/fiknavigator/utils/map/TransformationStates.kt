@@ -1,7 +1,5 @@
 package com.unisza.fiknavigator.utils.map
 
-
-
 import androidx.compose.foundation.gestures.TransformableState
 import androidx.compose.foundation.gestures.rememberTransformableState
 import androidx.compose.runtime.Composable
@@ -15,7 +13,6 @@ import kotlin.math.PI
 import kotlin.math.cos
 import kotlin.math.sin
 
-// Images original state
 class TransformationStates {
     var scale by mutableFloatStateOf(1f)
     var rotation by mutableFloatStateOf(0f)

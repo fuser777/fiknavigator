@@ -4,7 +4,6 @@ import android.content.Context
 import android.content.SharedPreferences
 import com.unisza.fiknavigator.utils.AssetManager
 
-// PreferencesManager.kt
 object PreferencesManager {
     private const val PREFERENCES_FILE_KEY = "com.unisza.fiknavigator.PREFERENCES"
     private const val KEY_CURRENT_DEPARTMENT = "KEY_CURRENT_DEPARTMENT"
@@ -111,12 +110,4 @@ object PreferencesManager {
         val sharedPreferences: SharedPreferences = context.getSharedPreferences(PREFERENCES_FILE_KEY, Context.MODE_PRIVATE)
         return sharedPreferences.getBoolean(ONBOARDING_COMPLETED_KEY, false)
     }
-
-//
-//    fun getNavigationPath(context: Context): List<Int> {
-//        val sharedPreferences: SharedPreferences = context.getSharedPreferences(PREFERENCES_FILE_KEY, Context.MODE_PRIVATE)
-//        val pathString = sharedPreferences.getString(KEY_NAVIGATION_PATH, null) ?: return emptyList()
-//        return pathString.split(",").mapNotNull { it.toIntOrNull() }
-//    }
-//
 }
